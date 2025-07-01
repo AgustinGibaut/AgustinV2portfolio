@@ -37,21 +37,23 @@
 
 
 
-      <div class="social-icons">
-        <a href="https://github.com/AgustinGibaut" target="_blank" aria-label="GitHub" class="social-icon" data-label="GitHub">
-          <i class="fab fa-github fa-2x"></i>
-          <span class="tooltip">GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/agustin-gibaut/" target="_blank" aria-label="LinkedIn" class="social-icon" data-label="LinkedIn">
-          <i class="fab fa-linkedin fa-2x"></i>
-          <span class="tooltip">LinkedIn</span>
-        </a>
-        <a href="mailto:agusgibaut693@gmail.com" aria-label="Email" class="social-icon" data-label="Email">
-          <i class="fas fa-envelope fa-2x"></i>
-          <span class="tooltip">Email</span>
-        </a>
-      </div>
-    </div>
+      <div style="text-align: center;">
+  <div class="social-icons">
+    <a href="https://github.com/AgustinGibaut" target="_blank" aria-label="GitHub" class="social-icon" data-label="GitHub">
+      <i class="fab fa-github fa-2x"></i>
+      <span class="tooltip">GitHub</span>
+    </a>
+    <a href="https://www.linkedin.com/in/agustin-gibaut/" target="_blank" aria-label="LinkedIn" class="social-icon" data-label="LinkedIn">
+      <i class="fab fa-linkedin fa-2x"></i>
+      <span class="tooltip">LinkedIn</span>
+    </a>
+    <a href="mailto:agusgibaut693@gmail.com" aria-label="Email" class="social-icon" data-label="Email">
+      <i class="fas fa-envelope fa-2x"></i>
+      <span class="tooltip">Email</span>
+    </a>
+  </div>
+</div>
+
     
 
 
@@ -108,7 +110,10 @@
       </div>
     </div>
   </div>
-  
+  <a href="#top" class="back-to-top" aria-label="Volver arriba">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
   <div class="footer__bottom">
     <p>&copy; 2025 Agustin Gibaut. Todos los derechos reservados.</p>
     <p>Desarrollado con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
@@ -154,6 +159,17 @@ window.addEventListener('scroll', () => {
 
   window.addEventListener("DOMContentLoaded", () => {
     window.dispatchEvent(new Event('scroll'));
+  });
+
+  // Mostrar flecha cuando se hace scroll hacia abajo
+  const backToTop = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
   });
 </script>
 
