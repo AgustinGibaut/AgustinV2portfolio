@@ -1,76 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agustin</title>
+    <title>Agustin Gibaut - Desarrollador</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22lime%22>A</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ffffff%22>A</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<!-- HERO SECTION -->
+
 <section class="home section--hero">
-  <div class="hero hero--row">
-    
-    <!-- TEXT CONTENT -->
-    <div class="hero__content">
-
-      <!-- Nombre y Descripción -->
+  <div class="hero hero--row" style="display: flex; align-items: center; justify-content: space-between; gap: 2rem;">
+    <div class="hero__content" style="flex: 1; text-align: left;">
       <h1><i class="fas fa-user"></i> AGUSTIN GIBAUT</h1>
-      <p><i class="fas fa-laptop-code"></i> Estudiante de desarrollo de software de segundo.</p>
+      <p><i class="fas fa-laptop-code"></i> Estudiante de desarrollo de software de segundo año.</p>
 
-      <!-- Título animado -->
-      <h2 class="hero__title hero__title--animated">
-        <span class="static-title">Desarrollador</span>
-        <span class="dropping-texts">
-          <span>Full Stack</span>
-          <span>Frontend</span>
-          <span>Backend</span>
-          <span>Mobile</span>
-          <span>IT</span>
-        </span>
+      <h2 class="hero__title hero__title--animated" style="justify-content: flex-start;">
+        <span class="static-title">Desarrollador de Software</span>
       </h2>
 
-
-
-   
-<div class="social-icons">
-  <a href="https://github.com/AgustinGibaut" target="_blank" aria-label="GitHub" class="social-icon" data-label="GitHub">
-    <i class="fab fa-github fa-2x"></i>
-    <span class="tooltip">GitHub</span>
-  </a>
-  <a href="https://www.linkedin.com/in/agustin-gibaut/" target="_blank" aria-label="LinkedIn" class="social-icon" data-label="LinkedIn">
-    <i class="fab fa-linkedin fa-2x"></i>
-    <span class="tooltip">LinkedIn</span>
-  </a>
-  <a href="mailto:agusgibaut693@gmail.com" aria-label="Email" class="social-icon" data-label="Email">
-    <i class="fas fa-envelope fa-2x"></i>
-    <span class="tooltip">Email</span>
-  </a>
-</div>
-
- 
- 
-
-    <!-- Imagen de perfil -->
-    <div class="hero__image-container">
-      <span class="hero__image-animated-border"></span>
-      <img 
-        src="logo.png" 
-        alt="Foto de Agustin Gibaut" 
-        class="hero__profile-img hero__profile-img--large mi-foto"
-      >
+      <p class="hero__bio">
+        👨‍💻 Apasionado por la programación.<br>
+        🌐 Me encanta crear aplicaciones web.<br>
+        🚀 Siempre aprendiendo nuevas tecnologías.<br>
+        🎯 Enfocado en Frontend, Backend y Mobile.
+      </p>
     </div>
 
+    <div class="hero__image" style="flex: 1; display: flex; justify-content: center;">
+      <img src="logo.png" alt="Foto de Agustin Gibaut" style="max-width: 100%; border-radius: 10px; object-fit: cover;"/>
+    </div>
   </div>
 </section>
 
-  <div class="technologies">
+
+
+      <div class="social-icons">
+        <a href="https://github.com/AgustinGibaut" target="_blank" aria-label="GitHub" class="social-icon" data-label="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+          <span class="tooltip">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/agustin-gibaut/" target="_blank" aria-label="LinkedIn" class="social-icon" data-label="LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <span class="tooltip">LinkedIn</span>
+        </a>
+        <a href="mailto:agusgibaut693@gmail.com" aria-label="Email" class="social-icon" data-label="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+          <span class="tooltip">Email</span>
+        </a>
+      </div>
+    </div>
+    
+
+
+<section class="technologies">
   <h1 class="section-title"><i class="fas fa-tools"></i> TECNOLOGÍAS</h1>
 
   <div class="tech-category">
-    <h2><i class="fas fa-code"></i> Frontend</h2>
+    <h2 class="section-subtitle"><i class="fas fa-code"></i> Frontend</h2>
     <ul class="tech-list">
       <li><i class="fab fa-html5"></i> HTML5</li>
       <li><i class="fab fa-css3-alt"></i> CSS3</li>
@@ -80,83 +69,172 @@
   </div>
 
   <div class="tech-category">
-    <h2><i class="fas fa-database"></i> Backend / Bases de Datos</h2>
+    <h2 class="section-subtitle"><i class="fas fa-database"></i> Backend / Bases de Datos</h2>
     <ul class="tech-list">
       <li><i class="fab fa-python"></i> Python</li>
       <li><i class="fas fa-leaf"></i> Django</li>
       <li><i class="fas fa-fire"></i> Flask</li>
-      <li><i class="fab fa-node-js"></i> Node.js </li>
+      <li><i class="fab fa-node-js"></i> Node.js</li>
       <li><i class="fas fa-database"></i> MySQL</li>
     </ul>
   </div>
-</div>
+</section>
 
+<section class="projects">
+  <h1 class="section-title"><i class="fas fa-briefcase"></i> PROYECTOS</h1>
+  <p class="projects__description">Algunos de mis trabajos más destacados</p>
+  
+  <div class="projects__grid">
+    <div class="project-card">
+      <div class="project-image">
+        <i class="fas fa-globe"></i>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title"><i class="fas fa-globe"></i> Portfolio Personal</h3>
+        <p class="project-description">Sitio web responsive creado con HTML, CSS y JavaScript, destacando mis habilidades como desarrollador frontend con diseño moderno y animaciones fluidas.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML5</span>
+          <span class="project-tag">CSS3</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Responsive</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Ver Demo
+          </a>
+          <a href="https://github.com/AgustinGibaut" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Código
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <i class="fas fa-database"></i>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title"><i class="fas fa-database"></i> PAINT WEB </h3>
+        <p class="project-description">PAINT EN FORMATO WEB DESARROLLAOD CON HTML CSS Y JS</p>
+        <div class="project-tags">
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Express</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">Full Stack</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Ver Demo
+          </a>
+          <a href="https://github.com/AgustinGibaut" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Código
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <i class="fas fa-film"></i>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title"><i class="fas fa-mobile-alt"></i> App de Películas</h3>
+        <p class="project-description">Web app tipo Netflix con API dinámica, categorías interactivas, y página de detalles usando React y Tailwind CSS con experiencia de usuario premium.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">API REST</span>
+          <span class="project-tag">Tailwind</span>
+          <span class="project-tag">SPA</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Ver Demo
+          </a>
+          <a href="https://github.com/AgustinGibaut" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Código
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__section">
+      <h3>Agustin Gibaut</h3>
+      <p>Desarrollador Frontend especializado en crear experiencias digitales excepcionales con tecnologías modernas.</p>
+    </div>
+    
+    <div class="footer__section">
+      <h4>Contacto</h4>
+      <div class="footer__contact">
+        <a href="mailto:agusgibaut693@gmail.com"><i class="fas fa-envelope"></i> agusgibaut693@gmail.com</a>
+        <a href="https://www.linkedin.com/in/agustin-gibaut/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/AgustinGibaut" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    
+    <div class="footer__section">
+      <h4>Tecnologías</h4>
+      <div class="footer__tech">
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Node.js</span>
+        <span>CSS3</span>
+        <span>MySQL</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer__bottom">
+    <p>&copy; 2025 Agustin Gibaut. Todos los derechos reservados.</p>
+    <p>Desarrollado con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
+  </div>
+</footer>
 
 <script>
+// Animación de texto con escritura
 const phrases = [
-  "Desarrollador Full Stack",
-  "Estudiante",
-  "Argentina",
-  "Desarrollo de Software"
+  "Full Stack",
+  "Frontend", 
+  "Backend",
+  "Mobile",
+  "IT"
 ];
 
-const animatedText = document.querySelector('.animated-text');
-
-let phraseIndex = 0;
-let letterIndex = 0;
-let currentText = '';
-let isDeleting = false;
-let delay = 150; // velocidad de escritura
-
-function type() {
-  const fullText = phrases[phraseIndex];
-
-  if (!isDeleting) {
-    currentText = fullText.substring(0, letterIndex + 1);
-    letterIndex++;
-    animatedText.textContent = currentText;
-
-    if (letterIndex === fullText.length) {
-      isDeleting = true;
-      delay = 1500; // pausa al terminar palabra
-    } else {
-      delay = 150;
-    }
-  } else {
-    currentText = fullText.substring(0, letterIndex - 1);
-    letterIndex--;
-    animatedText.textContent = currentText;
-
-    if (letterIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      delay = 500; // pausa antes de escribir siguiente palabra
-    } else {
-      delay = 100;
-    }
-  }
-
-  setTimeout(type, delay);
-}
-
-// Arranca la animación después de que carga la página
-window.addEventListener('DOMContentLoaded', () => {
-  type();
+// Tooltips para iconos sociales
+document.querySelectorAll('.social-icon').forEach(icon => {
+  icon.addEventListener('mouseenter', e => {
+    e.currentTarget.classList.add('show-tooltip');
+  });
+  
+  icon.addEventListener('mouseleave', e => {
+    e.currentTarget.classList.remove('show-tooltip');
+  });
 });
 
- document.querySelectorAll('.social-icon').forEach(icon => {
-    icon.addEventListener('click', e => {
-      e.currentTarget.classList.add('show-tooltip');
-      setTimeout(() => {
-        e.currentTarget.classList.remove('show-tooltip');
-      }, 1500); // Oculta el tooltip después de 1.5 segundos
-    });
+// Animación suave al hacer scroll
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    const scroll = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    
+    if (scroll > (sectionTop - windowHeight + sectionHeight/3)) {
+      section.style.opacity = '1';
+      section.style.transform = 'translateY(0)';
+    }
+  });
+});
+
+  window.addEventListener("DOMContentLoaded", () => {
+    window.dispatchEvent(new Event('scroll'));
   });
 </script>
 
-
-
-
-    <script src="index.js"></script>
 </body>
 </html>
