@@ -34,12 +34,24 @@
     </div>
   </div>
 
-  <div class="about">
-    <h1>Sobre mi</h1>
-    <p>Estudiante de desarrollo de software <mark style="background-color: aqua;">instituto superior politecnico cordoba</mark> con enfoque en frontend, especialmente Angular 20. </p>
-  </div>
-</section>
+   <div class="about">
+    <h1>Sobre mí</h1>
+    <p>Soy estudiante de Desarrollo de Software en el Instituto Superior Politécnico Córdoba, con un fuerte enfoque en el desarrollo frontend, especialmente en Angular 20. Me apasiona crear experiencias interactivas, modernas y eficientes en la web.</p>
 
+    <p>A lo largo de mi formación y proyectos personales, he adquirido conocimientos y habilidades que aplico en cada desarrollo:</p>
+
+
+    <h3>Habilidades blandas</h3>
+    <ul>
+      <li>Trabajo en equipo</li>
+      <li>Comunicación efectiva</li>
+      <li>Resolución de problemas</li>
+      <li>Gestión del tiempo</li>
+      <li>Capacidad de aprendizaje continuo</li>
+    </ul>
+
+    <p>Actualmente, me encuentro perfeccionando mis habilidades en proyectos propios, colaborando con otros desarrolladores, y explorando nuevas herramientas dentro del ecosistema web para seguir creciendo como profesional.</p>
+  </div>
 
 
       <div style="text-align: center;">
@@ -125,58 +137,8 @@
   </div>
 </footer>
 
-<script>
-// Animación de texto con escritura
-const phrases = [
-  "Full Stack",
-  "Frontend", 
-  "Backend",
-  "Mobile",
-  "IT"
-];
 
-// Tooltips para iconos sociales
-document.querySelectorAll('.social-icon').forEach(icon => {
-  icon.addEventListener('mouseenter', e => {
-    e.currentTarget.classList.add('show-tooltip');
-  });
-  
-  icon.addEventListener('mouseleave', e => {
-    e.currentTarget.classList.remove('show-tooltip');
-  });
-});
-
-// Animación suave al hacer scroll
-window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section');
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    const scroll = window.pageYOffset;
-    const windowHeight = window.innerHeight;
-    
-    if (scroll > (sectionTop - windowHeight + sectionHeight/3)) {
-      section.style.opacity = '1';
-      section.style.transform = 'translateY(0)';
-    }
-  });
-});
-
-  window.addEventListener("DOMContentLoaded", () => {
-    window.dispatchEvent(new Event('scroll'));
-  });
-
-  // Mostrar flecha cuando se hace scroll hacia abajo
-  const backToTop = document.querySelector('.back-to-top');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add('show');
-    } else {
-      backToTop.classList.remove('show');
-    }
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
